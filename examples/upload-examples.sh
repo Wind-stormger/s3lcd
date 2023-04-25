@@ -9,9 +9,10 @@ function menu() {
         4) T-HMI
         5) ESP32-S3-BOX or ESP32-S3-BOX-LITE
         6) WT32-SC01 Plus
+        7) BPI-Centi-S3
         0) Quit
 
-    Choose an option (0-6): "
+    Choose an option (0-7): "
     read a
     case $a in
 
@@ -73,6 +74,16 @@ function menu() {
             WIDE_SCREEN="480x320"
             TALL_SCREEN="320x480"
             CLOCK_FONT="150"
+            PROVERBS_FONT="45"
+            ;;
+        
+        7)  #   BPI-Centi-S3
+
+            FIRMWARE="S3LCD_QUAD_8M"
+            CONFIG="bpi-centi-s3"
+            WIDE_SCREEN="320x170"
+            TARL_SCREEN="170x320"
+            CLOCK_FONT="100"
             PROVERBS_FONT="45"
             ;;
 

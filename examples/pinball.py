@@ -788,6 +788,10 @@ elif buttons.name == "wt32-sc01-plus":
     right_flipper = buttons.right
     PRESSED=1
 
+elif buttons.name == "bpi-centi-s3":
+    left_flipper = buttons.button
+    right_flipper = buttons.boot
+
 # ------------ set up the display ------------
 
 tft = tft_config.config(tft_config.TALL)
